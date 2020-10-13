@@ -2,11 +2,14 @@ import React, { useState, useContext } from "react";
 import { AccountContext } from "./Accounts";
 import Status from "./Status";
 import Dashboard from "./Dashboard";
+import GoogleBtn from "./GoogleBtn"
+import FacebookBtn from "./FacebookBtn"
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const { authenticate } = useContext(AccountContext);
+  
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -43,6 +46,11 @@ export default function Login() {
             Login
           </button>
         </form>
+          <h2>OR</h2>
+          <GoogleBtn />
+          <FacebookBtn />
+          <br />
+          
         <Dashboard />
       </div>
     </div>

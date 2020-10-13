@@ -27,6 +27,7 @@ button {
   border-radius: 10px;
 }
 button:hover {
+  cursor: pointer;
   opacity: 0.6;
 }
 .input-field,
@@ -41,6 +42,15 @@ input {
 }
 .login-button {
   background-color: rgb(80, 218, 67);
+}
+.google-login {
+  background-color: #4285f4;
+  color: white;
+}
+.facebook-login {
+  background-color: #337ab7;
+  color: white;
+  display: inline;
 }
 img {
   margin-bottom: 20px;
